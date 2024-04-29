@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { productModel } from "../models/products.js";
+import { productModel } from "../dao/models/products.js";
 
 const router = Router();
 
@@ -9,7 +9,7 @@ router.get('/', async (req,res) =>{
 });
 
 router.get('/realtimeproducts', (req,res) =>{
-    return res.render('realTimeProducts', {title:'Real Time'});
+    return res.render('realTimeProducts', {styles: 'style.css', title:'Real Time'});
 });
 
 router.get('/chat', (req,res) =>{

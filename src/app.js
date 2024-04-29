@@ -8,8 +8,8 @@ import products from './routers/products.js';
 import carts from './routers/carts.js';
 import views from './routers/views.js';
 import { dbConnection } from "./database/config.js";
-import { productModel } from "./models/products.js";
-import { messageModel } from "./models/messages.js";
+import { productModel } from "./dao/models/products.js";
+import { messageModel } from "./dao/models/messages.js";
 
 const app = express();
 const PORT = 8080;
